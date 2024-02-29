@@ -1,30 +1,39 @@
+
 #ifndef RPG_CHARACTER_H
 #define RPG_CHARACTER_H
-
 #include <string>
+
+using namespace std;
 
 class Character {
 protected:
-    std::string name;
+    string name;
     int health;
     int attack;
     int defense;
     int speed;
-
+    bool isPlayer;
 public:
-    Character(std::string _name, int _health, int _attack, int _defense, int _speed);
-    virtual ~Character(); // Destructor virtual para asegurar llamada apropiada a los destructores de clases derivadas
+    Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
 
     virtual void doAttack(Character *target) = 0;
-    virtual void takeDamage(int damage);
-    bool isAlive() const;
+    virtual void takeDamage(int damage) = 0;
 
-    std::string getName() const;
-    int getHealth() const;
-    int getAttack() const;
-    int getDefense() const;
-    int getSpeed() const;
-    std::string toString() const;
+    /*
+    virtual void doDefense(Character *target) = 0;
+    */
+    //TODO: Implementar metodo de defensa
+    //Incrementar la defensa un 20% solo por el turno actual
+
+    bool flee(Character* target);
+    string getName();
+    int getHealth();
+    int getAttack();
+    int getDefense();
+    bool getIsPlayer();
+    int getSpeed();
+    string toString();
 };
 
-#endif // RPG_CHARACTER_H
+
+#endif //RPG_CHARACTER_H

@@ -1,23 +1,23 @@
 #ifndef RPG_ENEMY_H
 #define RPG_ENEMY_H
 
+#pragma once
 #include "../Character/Character.h"
+#include "../Player/Player.h"
+#include <vector>
+class Player;
 
-
-
-class Enemy : public Character {
+class Enemy: public Character{
 private:
     int experience;
-
 public:
-    Enemy(std::string _name, int _health, int _attack, int _defense, int _speed, int _experience);
-    //~Enemy();
-
+    Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
-    int getExperience() const;
+    Character* selectTarget(vector<Player*> possibleTargets);
 
-
+    int getExperience();
 };
 
-#endif // RPG_ENEMY_H
+
+#endif //RPG_ENEMY_H
