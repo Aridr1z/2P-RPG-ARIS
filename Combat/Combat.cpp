@@ -84,17 +84,40 @@ void Combat::doCombat() {
             if((*it)->getIsPlayer()) {
                 // TODO: Tarea Jugador debe poder elegir entre atacar y defender
 
+                int Action;
                 cout << "Attack (1) or Defense (2)" << endl;
+                cin >> Action;
 
-                target = ((Player *) *it)->selectTarget(enemies);
+                if (Action == 1){
+                    target = ((Player *) *it)->selectTarget(enemies);
+                    (*it)->doAttack(target);
+
+
+
+                } else if (Action == 2){
+                    target = 0;
+                    (*it)->doDefense(target);
+
+
+
+
+                }
+
+
+
+
+
+
 
 
             } else {
                 // TODO: si el enemigo tiene menos del 15% de vida, hay una probabilidad del 40% de que se defienda
                 target = ((Enemy *) *it)->selectTarget(partyMembers);
+                (*it)->doAttack(target);
+
             }
 
-            (*it)->doAttack(target);
+
             if(target->getHealth() <= 0){
                 it = participants.erase(remove(participants.begin(), participants.end(), target), participants.end());
                 if(target->getIsPlayer()){

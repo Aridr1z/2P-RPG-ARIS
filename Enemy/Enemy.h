@@ -16,6 +16,9 @@ public:
     void takeDamage(int damage) override;
     Character* selectTarget(vector<Player*> possibleTargets);
 
+    void doDefense(Character *target) override;
+    void takeDefense(int protect) override;
+
     int getExperience();
 };
 

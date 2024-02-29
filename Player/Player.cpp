@@ -12,16 +12,6 @@ void Player::doAttack(Character *target) {
     target->takeDamage(attack);
 }
 
-
-/*
-//// test marcador
-void Player::doDefense(Character *);
-
-
-
-/////
-*/
-
 void Player::takeDamage(int damage) {
     int trueDamage = damage - defense;
 
@@ -30,6 +20,13 @@ void Player::takeDamage(int damage) {
     cout << name << " took " << trueDamage << " damage!" << endl;
 
 }
+
+/////
+
+
+
+
+////
 
 void Player::levelUp() {
     level++;
@@ -58,18 +55,19 @@ Character* Player::selectTarget(vector<Enemy*> possibleTargets) {
 }
 
 
-/*
-///// marcador
-Character* Player::selectAction(vector<Player *> possibleAction) {
-    int Action = 0;
-    cout << "Select a action: " << endl;
 
-    for (int i = 0; i < possibleAction.size(); i++) {
-        cout << i << ". " << possibleAction[i]->getName() << endl;
-    }
-
-
+void Player::doDefense(Character *target) {
+    target->takeDefense(defense);
 
 }
 
- */
+void Player::takeDefense(int protect) {
+    protect = (defense * 0.20);
+
+    defense += protect;
+
+
+    cout << name << "incresese his defense by 20%, his defense is " << defense << endl;
+
+}
+

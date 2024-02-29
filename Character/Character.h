@@ -19,9 +19,14 @@ public:
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
 
-    /*
+    ////
     virtual void doDefense(Character *target) = 0;
-    */
+    virtual void takeDefense(int protect) = 0;
+
+
+    ////
+
+
     //TODO: Implementar metodo de defensa
     //Incrementar la defensa un 20% solo por el turno actual
 

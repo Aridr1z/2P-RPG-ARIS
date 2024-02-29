@@ -22,10 +22,13 @@ public:
     Character* selectTarget(vector<Enemy*> possibleTargets);
 
 
-    /*
+
     /// test maracdor
-    Character* selectAction(vector<Actions*>  Action);
-    */
+    void doDefense(Character *target) override;
+    void takeDefense(int protect) override;
+
+
+
 
     void gainExperience(int exp);
     //TODO: Implement use object

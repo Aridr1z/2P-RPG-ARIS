@@ -29,6 +29,12 @@ int Enemy::getExperience() {
     return experience;
 }
 
+
+
+
+
+
+
 Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
     //target with less health
     int lessHealth = 9999999;
@@ -40,4 +46,20 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
         }
     }
     return target;
+}
+
+
+void Enemy::doDefense(Character *target) {
+    target->takeDefense(defense);
+
+}
+
+void Enemy::takeDefense(int protect) {
+    protect = (defense * 0.20);
+
+    defense += protect;
+
+
+    cout << name << "incresese his defense by 20%, his defense is " << defense << endl;
+
 }
