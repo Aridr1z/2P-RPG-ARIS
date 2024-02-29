@@ -62,4 +62,5 @@ void Enemy::takeDefense(double protect) {
 
     cout << name << "incresese his defense by 20%, his defense is " << defense << endl;
 
+
 }
