@@ -16,7 +16,7 @@ private:
 
     void levelUp();
 public:
-    Player(string _name, int _health, int _attack, int _defense, int _speed);
+    Player(string _name, int _health, int _attack, double _defense, int _speed);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     Character* selectTarget(vector<Enemy*> possibleTargets);
@@ -24,8 +24,8 @@ public:
 
 
     /// test maracdor
-    void doDefense(Character *target) override;
-    void takeDefense(int protect) override;
+    void doDefense(Character *target1) override;
+    void takeDefense(double protect) override;
 
 
 

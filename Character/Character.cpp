@@ -1,6 +1,6 @@
 #include "Character.h"
 
-Character::Character(std::string _name, int _health, int _attack, int _defense, int _speed,bool _isPLayer)
+Character::Character(std::string _name, int _health, int _attack, double _defense, int _speed,bool _isPLayer)
         : name(_name), health(_health), attack(_attack), defense(_defense), speed(_speed), isPlayer(_isPLayer) {}
 
 

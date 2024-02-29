@@ -11,13 +11,13 @@ class Enemy: public Character{
 private:
     int experience;
 public:
-    Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience);
+    Enemy(string _name, int _health, int _attack, double _defense, int _speed, int _experience);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     Character* selectTarget(vector<Player*> possibleTargets);
 
-    void doDefense(Character *target) override;
-    void takeDefense(int protect) override;
+    void doDefense(Character *target1) override;
+    void takeDefense(double protect) override;
 
     int getExperience();
 };

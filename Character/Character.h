@@ -10,18 +10,18 @@ protected:
     string name;
     int health;
     int attack;
-    int defense;
+    double defense;
     int speed;
     bool isPlayer;
 public:
-    Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
+    Character(string _name, int _health, int _attack, double _defense, int _speed, bool _isPlayer);
 
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
 
     ////
-    virtual void doDefense(Character *target) = 0;
-    virtual void takeDefense(int protect) = 0;
+    virtual void doDefense(Character *target1) = 0;
+    virtual void takeDefense(double protect) = 0;
 
 
     ////

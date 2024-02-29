@@ -6,7 +6,7 @@
 using namespace std;
 using namespace combat_utils;
 
-Enemy::Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
+Enemy::Enemy(string _name, int _health, int _attack, double _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
     experience = _experience;
 }
 
@@ -49,12 +49,12 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
 }
 
 
-void Enemy::doDefense(Character *target) {
-    target->takeDefense(defense);
+void Enemy::doDefense(Character *target1) {
+    target1->takeDefense(defense);
 
 }
 
-void Enemy::takeDefense(int protect) {
+void Enemy::takeDefense(double protect) {
     protect = (defense * 0.20);
 
     defense += protect;

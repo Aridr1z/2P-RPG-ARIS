@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Player::Player(string _name, int _health, int _attack, int _defense, int _speed) : Character(_name, _health, _attack, _defense, _speed, true) {
+Player::Player(string _name, int _health, int _attack, double _defense, int _speed) : Character(_name, _health, _attack, _defense, _speed, true) {
     level = 1;
     experience = 0;
 }
@@ -56,13 +56,13 @@ Character* Player::selectTarget(vector<Enemy*> possibleTargets) {
 
 
 
-void Player::doDefense(Character *target) {
-    target->takeDefense(defense);
+void Player::doDefense(Character *target1) {
+    target1->takeDefense(defense);
 
 }
 
-void Player::takeDefense(int protect) {
-    protect = (defense * 0.20);
+void Player::takeDefense(double protect) {
+    protect = defense * 0.2;
 
     cout << defense << endl;
 
