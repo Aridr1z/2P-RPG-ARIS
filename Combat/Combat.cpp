@@ -86,11 +86,7 @@ void Combat::doCombat() {
 
                 cout << "Attack (1) or Defense (2)" << endl;
 
-
-
                 target = ((Player *) *it)->selectTarget(enemies);
-
-
 
 
             } else {
