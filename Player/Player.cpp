@@ -64,10 +64,14 @@ void Player::doDefense(Character *target) {
 void Player::takeDefense(int protect) {
     protect = (defense * 0.20);
 
+    cout << defense << endl;
+
     defense += protect;
 
 
     cout << name << "incresese his defense by 20%, his defense is " << defense << endl;
+
+    cout << defense << endl;
 
 }
 
