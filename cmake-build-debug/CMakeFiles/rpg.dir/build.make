@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG"
+CMAKE_SOURCE_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rpg.dir/depend.make
@@ -69,67 +69,97 @@ include CMakeFiles/rpg.dir/progress.make
 include CMakeFiles/rpg.dir/flags.make
 
 CMakeFiles/rpg.dir/main.cpp.obj: CMakeFiles/rpg.dir/flags.make
-CMakeFiles/rpg.dir/main.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P\ RPG/main.cpp
+CMakeFiles/rpg.dir/main.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/main.cpp
 CMakeFiles/rpg.dir/main.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rpg.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/main.cpp.obj -MF CMakeFiles\rpg.dir\main.cpp.obj.d -o CMakeFiles\rpg.dir\main.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rpg.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/main.cpp.obj -MF CMakeFiles\rpg.dir\main.cpp.obj.d -o CMakeFiles\rpg.dir\main.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\main.cpp"
 
 CMakeFiles/rpg.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\main.cpp" > CMakeFiles\rpg.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\main.cpp" > CMakeFiles\rpg.dir\main.cpp.i
 
 CMakeFiles/rpg.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\main.cpp" -o CMakeFiles\rpg.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\main.cpp" -o CMakeFiles\rpg.dir\main.cpp.s
 
 CMakeFiles/rpg.dir/Character/Character.cpp.obj: CMakeFiles/rpg.dir/flags.make
-CMakeFiles/rpg.dir/Character/Character.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P\ RPG/Character/Character.cpp
+CMakeFiles/rpg.dir/Character/Character.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/Character/Character.cpp
 CMakeFiles/rpg.dir/Character/Character.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rpg.dir/Character/Character.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Character/Character.cpp.obj -MF CMakeFiles\rpg.dir\Character\Character.cpp.obj.d -o CMakeFiles\rpg.dir\Character\Character.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Character\Character.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rpg.dir/Character/Character.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Character/Character.cpp.obj -MF CMakeFiles\rpg.dir\Character\Character.cpp.obj.d -o CMakeFiles\rpg.dir\Character\Character.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Character\Character.cpp"
 
 CMakeFiles/rpg.dir/Character/Character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/Character/Character.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Character\Character.cpp" > CMakeFiles\rpg.dir\Character\Character.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Character\Character.cpp" > CMakeFiles\rpg.dir\Character\Character.cpp.i
 
 CMakeFiles/rpg.dir/Character/Character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/Character/Character.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Character\Character.cpp" -o CMakeFiles\rpg.dir\Character\Character.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Character\Character.cpp" -o CMakeFiles\rpg.dir\Character\Character.cpp.s
 
 CMakeFiles/rpg.dir/Player/Player.cpp.obj: CMakeFiles/rpg.dir/flags.make
-CMakeFiles/rpg.dir/Player/Player.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P\ RPG/Player/Player.cpp
+CMakeFiles/rpg.dir/Player/Player.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/Player/Player.cpp
 CMakeFiles/rpg.dir/Player/Player.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rpg.dir/Player/Player.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Player/Player.cpp.obj -MF CMakeFiles\rpg.dir\Player\Player.cpp.obj.d -o CMakeFiles\rpg.dir\Player\Player.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Player\Player.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rpg.dir/Player/Player.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Player/Player.cpp.obj -MF CMakeFiles\rpg.dir\Player\Player.cpp.obj.d -o CMakeFiles\rpg.dir\Player\Player.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Player\Player.cpp"
 
 CMakeFiles/rpg.dir/Player/Player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/Player/Player.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Player\Player.cpp" > CMakeFiles\rpg.dir\Player\Player.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Player\Player.cpp" > CMakeFiles\rpg.dir\Player\Player.cpp.i
 
 CMakeFiles/rpg.dir/Player/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/Player/Player.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Player\Player.cpp" -o CMakeFiles\rpg.dir\Player\Player.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Player\Player.cpp" -o CMakeFiles\rpg.dir\Player\Player.cpp.s
 
 CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj: CMakeFiles/rpg.dir/flags.make
-CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P\ RPG/Enemy/Enemy.cpp
+CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/Enemy/Enemy.cpp
 CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj -MF CMakeFiles\rpg.dir\Enemy\Enemy.cpp.obj.d -o CMakeFiles\rpg.dir\Enemy\Enemy.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Enemy\Enemy.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj -MF CMakeFiles\rpg.dir\Enemy\Enemy.cpp.obj.d -o CMakeFiles\rpg.dir\Enemy\Enemy.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Enemy\Enemy.cpp"
 
 CMakeFiles/rpg.dir/Enemy/Enemy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/Enemy/Enemy.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Enemy\Enemy.cpp" > CMakeFiles\rpg.dir\Enemy\Enemy.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Enemy\Enemy.cpp" > CMakeFiles\rpg.dir\Enemy\Enemy.cpp.i
 
 CMakeFiles/rpg.dir/Enemy/Enemy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/Enemy/Enemy.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\Enemy\Enemy.cpp" -o CMakeFiles\rpg.dir\Enemy\Enemy.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Enemy\Enemy.cpp" -o CMakeFiles\rpg.dir\Enemy\Enemy.cpp.s
+
+CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: CMakeFiles/rpg.dir/flags.make
+CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/Combat/Combat.cpp
+CMakeFiles/rpg.dir/Combat/Combat.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rpg.dir/Combat/Combat.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Combat/Combat.cpp.obj -MF CMakeFiles\rpg.dir\Combat\Combat.cpp.obj.d -o CMakeFiles\rpg.dir\Combat\Combat.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Combat.cpp"
+
+CMakeFiles/rpg.dir/Combat/Combat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/Combat/Combat.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Combat.cpp" > CMakeFiles\rpg.dir\Combat\Combat.cpp.i
+
+CMakeFiles/rpg.dir/Combat/Combat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/Combat/Combat.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Combat.cpp" -o CMakeFiles\rpg.dir\Combat\Combat.cpp.s
+
+CMakeFiles/rpg.dir/Combat/Action.cpp.obj: CMakeFiles/rpg.dir/flags.make
+CMakeFiles/rpg.dir/Combat/Action.cpp.obj: C:/Users/goril/OneDrive/Desktop/Jalados\ de\ github\ xd/School/2P-RPG/Combat/Action.cpp
+CMakeFiles/rpg.dir/Combat/Action.cpp.obj: CMakeFiles/rpg.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rpg.dir/Combat/Action.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpg.dir/Combat/Action.cpp.obj -MF CMakeFiles\rpg.dir\Combat\Action.cpp.obj.d -o CMakeFiles\rpg.dir\Combat\Action.cpp.obj -c "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Action.cpp"
+
+CMakeFiles/rpg.dir/Combat/Action.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rpg.dir/Combat/Action.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Action.cpp" > CMakeFiles\rpg.dir\Combat\Action.cpp.i
+
+CMakeFiles/rpg.dir/Combat/Action.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rpg.dir/Combat/Action.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\Combat\Action.cpp" -o CMakeFiles\rpg.dir\Combat\Action.cpp.s
 
 # Object files for target rpg
 rpg_OBJECTS = \
 "CMakeFiles/rpg.dir/main.cpp.obj" \
 "CMakeFiles/rpg.dir/Character/Character.cpp.obj" \
 "CMakeFiles/rpg.dir/Player/Player.cpp.obj" \
-"CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj"
+"CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj" \
+"CMakeFiles/rpg.dir/Combat/Combat.cpp.obj" \
+"CMakeFiles/rpg.dir/Combat/Action.cpp.obj"
 
 # External object files for target rpg
 rpg_EXTERNAL_OBJECTS =
@@ -138,11 +168,13 @@ rpg.exe: CMakeFiles/rpg.dir/main.cpp.obj
 rpg.exe: CMakeFiles/rpg.dir/Character/Character.cpp.obj
 rpg.exe: CMakeFiles/rpg.dir/Player/Player.cpp.obj
 rpg.exe: CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj
+rpg.exe: CMakeFiles/rpg.dir/Combat/Combat.cpp.obj
+rpg.exe: CMakeFiles/rpg.dir/Combat/Action.cpp.obj
 rpg.exe: CMakeFiles/rpg.dir/build.make
 rpg.exe: CMakeFiles/rpg.dir/linkLibs.rsp
 rpg.exe: CMakeFiles/rpg.dir/objects1.rsp
 rpg.exe: CMakeFiles/rpg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rpg.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rpg.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\rpg.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +186,6 @@ CMakeFiles/rpg.dir/clean:
 .PHONY : CMakeFiles/rpg.dir/clean
 
 CMakeFiles/rpg.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles\rpg.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles\rpg.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/rpg.dir/depend
 

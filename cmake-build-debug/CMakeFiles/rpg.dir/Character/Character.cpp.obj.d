@@ -1,6 +1,6 @@
 CMakeFiles/rpg.dir/Character/Character.cpp.obj: \
- C:\Users\goril\OneDrive\Desktop\Jalados\ de\ github\ xd\School\2P\ RPG\Character\Character.cpp \
- C:\Users\goril\OneDrive\Desktop\Jalados\ de\ github\ xd\School\2P\ RPG\Character\Character.h \
+ C:\Users\goril\OneDrive\Desktop\Jalados\ de\ github\ xd\School\2P-RPG\Character\Character.cpp \
+ C:\Users\goril\OneDrive\Desktop\Jalados\ de\ github\ xd\School\2P-RPG\Character\Character.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.2.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \

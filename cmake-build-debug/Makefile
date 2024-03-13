@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.2.1\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG"
+CMAKE_SOURCE_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P RPG\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\goril\OneDrive\Desktop\Jalados de github xd\School\2P-RPG\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,54 @@ Character/Character.s: Character/Character.cpp.s
 Character/Character.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Character/Character.cpp.s
 .PHONY : Character/Character.cpp.s
+
+Combat/Action.obj: Combat/Action.cpp.obj
+.PHONY : Combat/Action.obj
+
+# target to build an object file
+Combat/Action.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Action.cpp.obj
+.PHONY : Combat/Action.cpp.obj
+
+Combat/Action.i: Combat/Action.cpp.i
+.PHONY : Combat/Action.i
+
+# target to preprocess a source file
+Combat/Action.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Action.cpp.i
+.PHONY : Combat/Action.cpp.i
+
+Combat/Action.s: Combat/Action.cpp.s
+.PHONY : Combat/Action.s
+
+# target to generate assembly for a file
+Combat/Action.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Action.cpp.s
+.PHONY : Combat/Action.cpp.s
+
+Combat/Combat.obj: Combat/Combat.cpp.obj
+.PHONY : Combat/Combat.obj
+
+# target to build an object file
+Combat/Combat.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Combat.cpp.obj
+.PHONY : Combat/Combat.cpp.obj
+
+Combat/Combat.i: Combat/Combat.cpp.i
+.PHONY : Combat/Combat.i
+
+# target to preprocess a source file
+Combat/Combat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Combat.cpp.i
+.PHONY : Combat/Combat.cpp.i
+
+Combat/Combat.s: Combat/Combat.cpp.s
+.PHONY : Combat/Combat.s
+
+# target to generate assembly for a file
+Combat/Combat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rpg.dir\build.make CMakeFiles/rpg.dir/Combat/Combat.cpp.s
+.PHONY : Combat/Combat.cpp.s
 
 Enemy/Enemy.obj: Enemy/Enemy.cpp.obj
 .PHONY : Enemy/Enemy.obj
@@ -236,6 +284,12 @@ help:
 	@echo ... Character/Character.obj
 	@echo ... Character/Character.i
 	@echo ... Character/Character.s
+	@echo ... Combat/Action.obj
+	@echo ... Combat/Action.i
+	@echo ... Combat/Action.s
+	@echo ... Combat/Combat.obj
+	@echo ... Combat/Combat.i
+	@echo ... Combat/Combat.s
 	@echo ... Enemy/Enemy.obj
 	@echo ... Enemy/Enemy.i
 	@echo ... Enemy/Enemy.s
