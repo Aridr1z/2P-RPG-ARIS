@@ -1,12 +1,11 @@
 //
-// Created by goril on 28/02/2024.
+// Created by Victor Navarro on 19/02/24.
 //
 
 #include "Combat.h"
 #include <string>
 #include <iostream>
 #include <utility>
-#include <algorithm>
 
 using namespace std;
 
@@ -77,75 +76,66 @@ Character* Combat::getTarget(Character* attacker) {
 void Combat::doCombat() {
     cout<< "Inicio del combate" << endl;
     combatPrep();
-    while(participants.size() > 1){
+    int round = 1;
+    //Este while representa las rondas del combate
+    while(enemies.size() > 0 && partyMembers.size() > 0) {
+        cout<<"Round " << round << endl;
         vector<Character*>::iterator it = participants.begin();
-        while(it != participants.end()) {
-            Character* target = nullptr;
+        registerActions(it);
+        executeActions(it);
 
+        round++;
+    }
 
+    if(enemies.empty()) {
+        cout << "You win!" << endl;
+    } else {
+        cout << "You lose!" << endl;
 
-            if((*it)->getIsPlayer()) {
-                // TODO: Tarea Jugador debe poder elegir entre atacar y defender
+    }
+}
 
-                int Act;
-                cout << "Attack (1) or Defense (2)" << endl;
-                cin >> Act;
+void Combat::executeActions(vector<Character*>::iterator participant) {
+    while(!actionQueue.empty()) {
+        Action currentAction = actionQueue.top();
+        currentAction.action();
+        actionQueue.pop();
 
+        //Check if there are any dead characters
+        checkParticipantStatus(*participant);
+        checkParticipantStatus(currentAction.target);
+    }
+}
 
-                /////////
-                if (Act == 1){
-                    target = ((Player *) *it)->selectTarget(enemies);
-                    (*it)->doAttack(target);
-
-                }
-                if (Act == 2){
-                    ///target = (*it)->selectTarget(partyMembers);
-                    (*it)->doDefense(*it);
-
-                }
-                ///////
-
-            } else {
-                // TODO: si el enemigo tiene menos del 15% de vida, hay una probabilidad del 40% de que se defienda
-
-                target = ((Enemy *) *it)->selectTarget(partyMembers);
-
-                int test =  target ->  getHealth();
-
-                if (test <= (0.15*test)){
-
-                    int randomNumber = rand() % 100;
-
-                    if (randomNumber <40) {
-                        return (*it)->doDefense(*it);
-                    }
-                }else {
-
-                    (*it)->doAttack(target);
-                }
-
-            }
-
-
-            if(target != nullptr  && target->getHealth() <= 0){
-                it = participants.erase(remove(participants.begin(), participants.end(), target), participants.end());
-                if(target->getIsPlayer()){
-                    partyMembers.erase(remove(partyMembers.begin(), partyMembers.end(), target), partyMembers.end());
-                    if(partyMembers.size() == 0){
-                        cout << "Game Over" << endl;
-                        return;
-                    }
-                } else {
-                    cout << "You killed enemy " << target->getName() << endl;
-                    enemies.erase(remove(enemies.begin(), enemies.end(), target), enemies.end());
-                    if(enemies.size() == 0){
-                        cout << "Victory" << endl;
-                        return;
-                    }
-                }
-            } else {
-                it++;
-            }
+void Combat::checkParticipantStatus(Character *participant) {
+    if(participant->getHealth() <= 0) {
+        if(participant->getIsPlayer()) {
+            partyMembers.erase(remove(partyMembers.begin(), partyMembers.end(), participant), partyMembers.end());
+        } else {
+            enemies.erase(remove(enemies.begin(), enemies.end(), participant), enemies.end());
         }
+        participants.erase(remove(participants.begin(), participants.end(), participant), participants.end());
+    }
+}
+
+void Combat::registerActions(vector<Character*>::iterator participantIterator) {
+    //Este while representa el turno de cada participante
+    //La eleccion que cada personaje elije en su turno
+    while(participantIterator != participants.end()) {
+        if((*participantIterator)->getIsPlayer()) {
+
+
+
+            /////
+            Action playerAction = ((Player*) *participantIterator)->takeAction(enemies);
+
+
+            actionQueue.push(playerAction);
+        } else {
+            Action enemyAction = ((Enemy*) *participantIterator)->takeAction(partyMembers);
+            actionQueue.push(enemyAction);
+        }
+
+        participantIterator++;
     }
 }

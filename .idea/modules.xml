@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/2P-RPG-ARIS.iml" filepath="$PROJECT_DIR$/.idea/2P-RPG-ARIS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/rpg.iml" filepath="$PROJECT_DIR$/.idea/rpg.iml" />
     </modules>
   </component>
 </project>

@@ -1,3 +1,7 @@
+//
+// Created by Victor Navarro on 15/02/24.
+//
+
 #ifndef RPG_ENEMY_H
 #define RPG_ENEMY_H
 
@@ -5,19 +9,20 @@
 #include "../Character/Character.h"
 #include "../Player/Player.h"
 #include <vector>
+#include "../Combat/Action.h"
+
 class Player;
 
 class Enemy: public Character{
 private:
     int experience;
 public:
-    Enemy(string _name, int _health, int _attack, double _defense, int _speed, int _experience);
+    Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
+    void doDefense(int defense) override;
     Character* selectTarget(vector<Player*> possibleTargets);
-
-    void doDefense(Character *target1) override;
-    void takeDefense(double protect) override;
+    Action takeAction(vector<Player*> partyMembers);
 
     int getExperience();
 };

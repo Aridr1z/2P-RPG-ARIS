@@ -1,8 +1,12 @@
+//
+// Created by Victor Navarro on 15/02/24.
+//
 #pragma once
 #ifndef RPG_PLAYER_H
 #define RPG_PLAYER_H
 #include "../Character/Character.h"
 #include "../Enemy/Enemy.h"
+#include "../Combat/Action.h"
 #include <vector>
 
 class Enemy;
@@ -16,21 +20,18 @@ private:
 
     void levelUp();
 public:
-    Player(string _name, int _health, int _attack, double _defense, int _speed);
+    Player(string _name, int _health, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
+    void doDefense(int defense) override;
     Character* selectTarget(vector<Enemy*> possibleTargets);
-
-
-
-    /// test maracdor
-    void doDefense(Character *target1) override;
-    void takeDefense(double protect) override;
-
+    Character* selectPlayer(vector<Enemy*> possiblePlayers);
+    Action takeAction(vector<Enemy*> enemies);
 
 
 
     void gainExperience(int exp);
+
     //TODO: Implement use object
 };
 

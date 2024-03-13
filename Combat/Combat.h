@@ -1,5 +1,5 @@
 //
-// Created by goril on 28/02/2024.
+// Created by Victor Navarro on 19/02/24.
 //
 
 #ifndef RPG_COMBAT_H
@@ -8,12 +8,17 @@
 #include "../Character/Character.h"
 #include "../Player/Player.h"
 #include "../Enemy/Enemy.h"
+#include <queue>
 
 class Combat {
 private:
     vector<Character*> participants;
     vector<Player*> partyMembers;
     vector<Enemy*> enemies;
+    priority_queue<Action> actionQueue;
+    void registerActions(vector<Character*>::iterator participant);
+    void executeActions(vector<Character*>::iterator participant);
+    void checkParticipantStatus(Character* participant);
 
     void combatPrep();
     Character* getTarget(Character* attacker);

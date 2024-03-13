@@ -1,40 +1,44 @@
+//
+// Created by Victor Navarro on 15/02/24.
+//
+
 #include "Enemy.h"
 #include "../Utils.h"
 #include <iostream>
+#include <cmath>
 
 
 using namespace std;
 using namespace combat_utils;
 
-Enemy::Enemy(string _name, int _health, int _attack, double _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
+Enemy::Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
     experience = _experience;
 }
 
-
-///// marcador
 void Enemy::doAttack(Character *target) {
     target->takeDamage(getRolledAttack(attack));
 }
 
+void Enemy::doDefense(int defense) {
+    defense = static_cast<int>(std::round(defense * 1.2));
+    cout << name << " has been upgraded to "  <<  defense << " defense" << endl;
+}
 
-/// marcador
 void Enemy::takeDamage(int damage) {
     int trueDamage = damage - defense;
     health-= trueDamage;
 
     cout << name << " took " << trueDamage << " damage!" << endl;
+    if(health <= 0) {
+        cout << name << " has been defeated!" << endl;
+    }
 }
 
 int Enemy::getExperience() {
     return experience;
 }
 
-
-
-
-
-
-
+//////
 Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
     //target with less health
     int lessHealth = 9999999;
@@ -48,19 +52,27 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
     return target;
 }
 
+//////
+Action Enemy::takeAction(vector<Player*> partyMembers) {
 
-void Enemy::doDefense(Character *target1) {
-    target1->takeDefense(defense);
+    if (getHealth()>(0.15* getHealth())){
 
-}
+        Action currentAction;
+        currentAction.speed = getSpeed();
 
-void Enemy::takeDefense(double protect) {
-    protect = (defense * 0.20);
+        Character* target = selectTarget(partyMembers);
+        currentAction.target = target;
+        currentAction.action = [this, target](){
 
-    defense += protect;
+            /////
+            doAttack(target);
+        };
 
+        return currentAction;
 
-    cout << name << "incresese his defense by 20%, his defense is " << defense << endl;
+    } else{
+        doDefense(defense);
+    }
 
 
 }
