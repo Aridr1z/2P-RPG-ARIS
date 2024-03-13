@@ -81,6 +81,9 @@ void Combat::doCombat() {
         vector<Character*>::iterator it = participants.begin();
         while(it != participants.end()) {
             Character* target = nullptr;
+
+
+
             if((*it)->getIsPlayer()) {
                 // TODO: Tarea Jugador debe poder elegir entre atacar y defender
 
@@ -105,28 +108,26 @@ void Combat::doCombat() {
             } else {
                 // TODO: si el enemigo tiene menos del 15% de vida, hay una probabilidad del 40% de que se defienda
 
-
-
-
                 target = ((Enemy *) *it)->selectTarget(partyMembers);
-                (*it)->doAttack(target);
 
                 int test =  target ->  getHealth();
 
-                if (test < (0.15*test)){
+                if (test <= (0.15*test)){
 
                     int randomNumber = rand() % 100;
 
                     if (randomNumber <40) {
                         return (*it)->doDefense(*it);
                     }
+                }else {
+
+                    (*it)->doAttack(target);
                 }
-                
 
             }
 
 
-            if(target->getHealth() <= 0){
+            if(target != nullptr  && target->getHealth() <= 0){
                 it = participants.erase(remove(participants.begin(), participants.end(), target), participants.end());
                 if(target->getIsPlayer()){
                     partyMembers.erase(remove(partyMembers.begin(), partyMembers.end(), target), partyMembers.end());
