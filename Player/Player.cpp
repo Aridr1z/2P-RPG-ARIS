@@ -109,11 +109,11 @@ Action Player::takeAction(vector<Enemy*> enemies) {
             break;
 
 
-        case 3:
+        /*case 3:
 
 
             break;
-
+        */
         default:
             cout << "Invalid action" << endl;
             break;

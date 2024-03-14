@@ -15,6 +15,8 @@ Enemy::Enemy(string _name, int _health,int _maxHealth, int _attack, int _defense
     experience = _experience;
 }
 
+int t = 0;
+
 void Enemy::doAttack(Character *target) {
     target->takeDamage(getRolledAttack(attack));
 }
@@ -54,15 +56,15 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
 
 //////
 Action Enemy::takeAction(vector<Player*> partyMembers) {
-    int t = 0;
-    if (getHealth()>=(0.15* getMaxHealth())){
+
+    if (getHealth() >= (0.15 * getMaxHealth()) ||  t==1) {
 
         Action currentAction;
         currentAction.speed = getSpeed();
 
-        Character* target = selectTarget(partyMembers);
+        Character *target = selectTarget(partyMembers);
         currentAction.target = target;
-        currentAction.action = [this, target](){
+        currentAction.action = [this, target]() {
 
             /////
             doAttack(target);
@@ -70,10 +72,22 @@ Action Enemy::takeAction(vector<Player*> partyMembers) {
 
         return currentAction;
 
-    } else{
-        for(t=0; t <= 1;t++){
-            doDefense(defense);
-        }
+    } else if(t!=1) {
 
+
+        doDefense(defense);
+        t=1;
+        Action currentAction;
+        currentAction.speed = getSpeed();
+        Character *target = selectTarget(partyMembers);
+
+        currentAction.target = target;
+        currentAction.action = [this, target]() {
+
+        };
+
+        return currentAction;
     }
+
+
 }
