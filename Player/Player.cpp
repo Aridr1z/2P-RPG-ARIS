@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Player::Player(string _name, int _health, int _attack, int _defense, int _speed) : Character(_name, _health, _attack, _defense, _speed, true) {
+Player::Player(string _name, int _health, int _attack,int _maxHealth, int _defense, int _speed) : Character(_name, _health,_maxHealth, _attack, _defense, _speed, true) {
     level = 1;
     experience = 0;
 }
@@ -105,6 +105,12 @@ Action Player::takeAction(vector<Enemy*> enemies) {
 
             };
             currentAction.speed = getSpeed();
+
+            break;
+
+
+        case 3:
+
 
             break;
 

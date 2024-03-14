@@ -124,12 +124,8 @@ void Combat::registerActions(vector<Character*>::iterator participantIterator) {
     while(participantIterator != participants.end()) {
         if((*participantIterator)->getIsPlayer()) {
 
-
-
             /////
             Action playerAction = ((Player*) *participantIterator)->takeAction(enemies);
-
-
             actionQueue.push(playerAction);
         } else {
             Action enemyAction = ((Enemy*) *participantIterator)->takeAction(partyMembers);

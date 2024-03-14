@@ -11,7 +11,7 @@
 using namespace std;
 using namespace combat_utils;
 
-Enemy::Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
+Enemy::Enemy(string _name, int _health,int _maxHealth, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _maxHealth, _attack, _defense, _speed, false) {
     experience = _experience;
 }
 
@@ -54,8 +54,8 @@ Character* Enemy::selectTarget(vector<Player*> possibleTargets) {
 
 //////
 Action Enemy::takeAction(vector<Player*> partyMembers) {
-
-    if (getHealth()>(0.15* getHealth())){
+    int t = 0;
+    if (getHealth()>=(0.15* getMaxHealth())){
 
         Action currentAction;
         currentAction.speed = getSpeed();
@@ -71,8 +71,9 @@ Action Enemy::takeAction(vector<Player*> partyMembers) {
         return currentAction;
 
     } else{
-        doDefense(defense);
+        for(t=0; t <= 1;t++){
+            doDefense(defense);
+        }
+
     }
-
-
 }

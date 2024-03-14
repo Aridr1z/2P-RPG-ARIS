@@ -20,7 +20,7 @@ private:
 
     void levelUp();
 public:
-    Player(string _name, int _health, int _attack, int _defense, int _speed);
+    Player(string _name, int _health,int _maxHealth, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     void doDefense(int defense) override;

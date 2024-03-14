@@ -12,12 +12,13 @@ class Character {
 protected:
     string name;
     int health;
+    int maxHealth;
     int attack;
     int defense;
     int speed;
     bool isPlayer;
 public:
-    Character(string _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
+    Character(string _name, int _health, int _maxHealth, int _attack, int _defense, int _speed, bool _isPlayer);
 
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
@@ -30,6 +31,7 @@ public:
     bool flee(Character* target);
     string getName();
     int getHealth();
+    int getMaxHealth();
     int getAttack();
     int getDefense();
     bool getIsPlayer();
