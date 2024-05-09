@@ -31,7 +31,7 @@ void Player::takeDamage(int damage) {
     cout << name << " took " << trueDamage << " damage!" << endl;
 
     if(health <= 0) {
-        cout << name << " has been defeated!" << endl;
+        cout << name << "has been defeated!" << endl;
     }
 }
 
@@ -98,22 +98,23 @@ Action Player::takeAction(vector<Enemy*> enemies) {
 
 
         case 2:
-            doDefense(defense);
-            target = selectPlayer(enemies);
+
+            target = this;
             currentAction.target = target;
             currentAction.action = [this, target](){
-
+                doDefense(defense);
             };
             currentAction.speed = getSpeed();
 
             break;
 
 
-        /*case 3:
+        case 3:
+            //doLevelUp
 
 
             break;
-        */
+
         default:
             cout << "Invalid action" << endl;
             break;

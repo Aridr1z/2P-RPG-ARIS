@@ -21,8 +21,11 @@ public:
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     void doDefense(int defense) override;
+
+
     Character* selectTarget(vector<Player*> possibleTargets);
     Action takeAction(vector<Player*> partyMembers);
+
 
     int getExperience();
 };

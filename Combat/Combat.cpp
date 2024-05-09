@@ -113,7 +113,7 @@ void Combat::checkParticipantStatus(Character *participant) {
             partyMembers.erase(remove(partyMembers.begin(), partyMembers.end(), participant), partyMembers.end());
         } else {
             enemies.erase(remove(enemies.begin(), enemies.end(), participant), enemies.end());
-        }
+        }////
         participants.erase(remove(participants.begin(), participants.end(), participant), participants.end());
     }
 }

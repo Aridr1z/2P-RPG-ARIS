@@ -24,6 +24,8 @@ public:
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     void doDefense(int defense) override;
+
+
     Character* selectTarget(vector<Enemy*> possibleTargets);
     Character* selectPlayer(vector<Enemy*> possiblePlayers);
     Action takeAction(vector<Enemy*> enemies);

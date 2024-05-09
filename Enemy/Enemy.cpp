@@ -19,6 +19,7 @@ int t = 0;
 
 void Enemy::doAttack(Character *target) {
     target->takeDamage(getRolledAttack(attack));
+
 }
 
 void Enemy::doDefense(int defense) {
@@ -26,15 +27,21 @@ void Enemy::doDefense(int defense) {
     cout << name << " has been upgraded to "  <<  defense << " defense" << endl;
 }
 
+////////
 void Enemy::takeDamage(int damage) {
     int trueDamage = damage - defense;
     health-= trueDamage;
 
     cout << name << " took " << trueDamage << " damage!" << endl;
     if(health <= 0) {
-        cout << name << " has been defeated!" << endl;
+        cout << name << "enemy has been defeated!" << endl;
     }
 }
+
+
+/////
+
+
 
 int Enemy::getExperience() {
     return experience;
@@ -75,14 +82,17 @@ Action Enemy::takeAction(vector<Player*> partyMembers) {
     } else if(t!=1) {
 
 
-        doDefense(defense);
+
         t=1;
         Action currentAction;
         currentAction.speed = getSpeed();
-        Character *target = selectTarget(partyMembers);
+        Character *target = nullptr;
+        //Character *target = selectTarget(partyMembers);
 
+        target = this;
         currentAction.target = target;
-        currentAction.action = [this, target]() {
+        currentAction.action = [this,target]() {
+            doDefense(defense);
 
         };
 

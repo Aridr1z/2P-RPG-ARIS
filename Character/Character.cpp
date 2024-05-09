@@ -13,6 +13,8 @@ Character::Character(char _name[40], int _health,int _maxHealth, int _attack, in
     isPlayer = _isPlayer;
 }
 
+
+
 string Character::getName() {
     return name;
 }
