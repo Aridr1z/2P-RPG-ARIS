@@ -13,6 +13,8 @@ Player::Player(char _name[40], int _health, int _attack,int _maxHealth, int _def
     experience = 0;
 }
 
+/// agregar constructor sobrecargado para agregar parametros
+
 void Player::doAttack(Character *target) {
     target->takeDamage(attack);
 }
@@ -91,8 +93,17 @@ Action Player::takeAction(vector<Enemy*> enemies) {
             currentAction.target = target;
             currentAction.action = [this, target](){
                 doAttack(target);
+
+                Enemy* tilin = ((Enemy*)target);
+                getHealth(tilin->getExperience());
+
             };
             currentAction.speed = getSpeed();
+
+
+
+
+            ////chcaer si murio el enemigo y dale el exp al enemigo
             break;
 
 

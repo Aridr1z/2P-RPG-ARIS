@@ -22,18 +22,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c273ae46-36cf-4cba-8d1e-482765e1f3c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Character/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Character/Character.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Combat/Combat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Combat/Combat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enemy/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Enemy/Enemy.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-19T05-49-50-0246.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/rpg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/rpg.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +90,7 @@
       <workItem from="1710388399763" duration="1155000" />
       <workItem from="1713505786966" duration="363000" />
       <workItem from="1715244187909" duration="4564000" />
+      <workItem from="1715248993703" duration="594000" />
     </task>
     <servers />
   </component>
