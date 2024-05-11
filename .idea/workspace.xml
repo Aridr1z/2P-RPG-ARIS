@@ -28,7 +28,6 @@
       <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/rpg.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/rpg.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <workItem from="1713505786966" duration="363000" />
       <workItem from="1715244187909" duration="4564000" />
       <workItem from="1715248993703" duration="594000" />
-      <workItem from="1715375346847" duration="13067000" />
+      <workItem from="1715375346847" duration="14080000" />
     </task>
     <servers />
   </component>

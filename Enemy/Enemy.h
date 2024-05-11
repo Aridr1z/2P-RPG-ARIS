@@ -28,7 +28,7 @@ public:
 
     int getExperience();
 
-    void increaseEnemyStats(vector<Enemy*> enemies);
+    void increaseEnemyStats();
 
 
 };

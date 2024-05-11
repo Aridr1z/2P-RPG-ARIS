@@ -31,6 +31,7 @@ public:
     Action takeAction(vector<Enemy*> enemies);
 
     void levelUp();
+    std::vector<Enemy*> enemies;
 
 
 

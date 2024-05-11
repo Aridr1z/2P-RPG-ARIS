@@ -103,7 +103,7 @@ Action Enemy::takeAction(vector<Player*> partyMembers) {
 }
 
 
-void Enemy::increaseEnemyStats(vector<Enemy*> enemies) {
+void Enemy::increaseEnemyStats() {
 
 
     int levels = 5;
