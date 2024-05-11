@@ -134,64 +134,100 @@ Character* Player::selectPlayer(vector<Enemy*> possiblePlayers) {
 
 Action Player::takeAction(vector<Enemy*> enemies) {
     int action = 0;
-    cout << "Select an action: " << endl;
-    cout << "1. Attack" << endl;
-    cout << "2. Defense" << endl;
-
-    //TODO: Validate input
-    cin >> action;
     Action currentAction;
     Character* target = nullptr;
 
-    /////
-    switch(action) {
-        case 1:
-            target = selectTarget(enemies);
-            currentAction.target = target;
-            currentAction.action = [this, target](){
-                doAttack(target);
 
-                if (target->getHealth() <= 0){
 
-                    this -> gainExperience(100);
+    do {
 
+
+        cout << "Select an action: " << endl;
+        cout << "1. Attack" << endl;
+        cout << "2. Defense" << endl;
+        cout << "3. Check Stats" << endl;
+        cout << "4. Save Game" << endl;
+        cout << "5. Load Game" << endl;
+
+
+        //TODO: Validate input
+        cin >> action;
+
+
+        switch (action) {
+            case 1:
+                target = selectTarget(enemies);
+                currentAction.target = target;
+                currentAction.action = [this, target]() {
+                    doAttack(target);
+
+                    if (target->getHealth() <= 0) {
+
+                        this->gainExperience(100);
+
+                    }
+
+                };
+                currentAction.speed = getSpeed();
+
+
+                ////chcaer si murio el enemigo y dale el exp al enemigo
+                break;
+
+
+            case 2:
+
+                target = this;
+                currentAction.target = target;
+                currentAction.action = [this, target]() {
+                    doDefense(defense);
+                };
+                currentAction.speed = getSpeed();
+
+                break;
+
+            case 3:
+                cout << "Name: " << getName() << endl;
+                cout << "Level: " << getLevel() << endl;
+                cout << "Health: " << getHealth() << endl;
+                cout << "Attack: " << getAttack() << endl;
+                cout << "Defense: " << getDefense() << endl;
+                cout << "Speed: " << getSpeed() << endl;
+
+
+                break;
+
+            case 4:
+                saveToFile("player_stats.txt");
+                cout << "Player stats saved successfully." << endl;
+                break;
+
+            case 5:
+                if (!loadFromFile("player_stats.txt")) {
+                    cout << "Failed to load player stats. Starting a new game." << endl;
+                    // Inicializar el jugador con estadísticas predeterminadas
+                } else {
+                    cout << "Player stats loaded successfully." << endl;
                 }
-
-            };
-            currentAction.speed = getSpeed();
+                break;
 
 
 
 
-            ////chcaer si murio el enemigo y dale el exp al enemigo
-            break;
+            default:
+                cout << "Invalid action" << endl;
+                break;
+        }
 
-
-
-        case 2:
-
-            target = this;
-            currentAction.target = target;
-            currentAction.action = [this, target](){
-                doDefense(defense);
-            };
-            currentAction.speed = getSpeed();
-
-            break;
-
-
-        case 3:
-            //doLevelUp
-
-
-            break;
-
-        default:
-            cout << "Invalid action" << endl;
-            break;
-    }
+    }while (action == 3 || action == 4 || action == 5 || action == 6
+            || action == 7 || action == 8);
 
     return currentAction;
+}
+
+
+int Player::getLevel() {
+    return level;
 }
 
 
