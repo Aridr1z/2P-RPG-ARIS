@@ -18,7 +18,7 @@ private:
     int level;
     int experience;
 
-    void levelUp();
+
 public:
     Player(char _name[40], int _health,int _maxHealth, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
@@ -30,9 +30,16 @@ public:
     Character* selectPlayer(vector<Enemy*> possiblePlayers);
     Action takeAction(vector<Enemy*> enemies);
 
+    void levelUp();
+
+
 
 
     void gainExperience(int exp);
+
+
+
+
 
     //TODO: Implement use object
 };

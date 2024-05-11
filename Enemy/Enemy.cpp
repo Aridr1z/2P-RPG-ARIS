@@ -101,3 +101,38 @@ Action Enemy::takeAction(vector<Player*> partyMembers) {
 
 
 }
+
+
+void Enemy::increaseEnemyStats(vector<Enemy*> enemies) {
+
+
+    int levels = 5;
+
+    for (int i = 0; i < levels; i++) {
+
+        int opcion = rand() % 4;
+
+        switch (opcion) {
+            case 0:
+                health++;
+                cout<<"indicador"<< endl;
+                break;
+            case 1:
+                attack++;
+                cout<<"indicador"<< endl;
+                break;
+            case 2:
+                defense++;
+                cout<<"indicador"<< endl;
+                break;
+            case 3:
+                speed++;
+                cout<<"indicador"<< endl;
+                break;
+        }
+
+
+    }
+
+}
+

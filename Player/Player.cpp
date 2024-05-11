@@ -5,6 +5,7 @@
 #include "Player.h"
 #include <iostream>
 #include <cmath>
+#include <time.h>
 
 using namespace std;
 
@@ -39,13 +40,64 @@ void Player::takeDamage(int damage) {
 
 void Player::levelUp() {
     level++;
+    int point = 5;
+    int select;
+
+    cout << name << " jose has leveled up, choose a skill to increase it " << endl;
+
+    while (point >= 0 ){
+
+        cout << "1. Health" << endl;
+        cout << "2. Attack" << endl;
+        cout << "3. Defense" << endl;
+        cout << "4. Speed" << endl;
+
+        cin >> select;
+
+
+        switch (select) {
+            case 1:
+                health++;
+                cout << "Health increased by 1." << endl;
+                point--;
+                break;
+            case 2:
+                attack++;
+                cout << "Attack increased by 1." << endl;
+                point--;
+                break;
+            case 3:
+                defense++;
+                cout << "Defense increased by 1." << endl;
+                point--;
+                break;
+            case 4:
+                speed++;
+                cout << "Speed increased by 1." << endl;
+                point--;
+                break;
+            default:
+                cout << "Invalid choice. Please try again." << endl;
+                point--;
+                break;
+        }
+
+
+    }
+
+
+
 }
+
+
+
 
 void Player::gainExperience(int exp) {
     experience += exp;
     if (experience >= 100) {
         levelUp();
         experience = 100-experience;
+        cout << name << " has upgraded" << endl;
     }
 }
 
@@ -94,8 +146,11 @@ Action Player::takeAction(vector<Enemy*> enemies) {
             currentAction.action = [this, target](){
                 doAttack(target);
 
-                Enemy* tilin = ((Enemy*)target);
-                getHealth(tilin->getExperience());
+                if (target->getHealth() <= 0){
+
+                    this -> gainExperience(100);
+
+                }
 
             };
             currentAction.speed = getSpeed();
