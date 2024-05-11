@@ -84,8 +84,8 @@ void Player::levelUp() {
 
 
     }
+lol
 
-    cout<<"indicador"<< endl;
     for (Enemy* enemy : enemies) {
         enemy->increaseEnemyStats(); // Llamar al método para aumentar las estadísticas del enemigo
     }

@@ -115,19 +115,18 @@ void Enemy::increaseEnemyStats() {
         switch (opcion) {
             case 0:
                 health++;
-                cout<<"indicador"<< endl;
+
                 break;
             case 1:
                 attack++;
-                cout<<"indicador"<< endl;
+
                 break;
             case 2:
                 defense++;
-                cout<<"indicador"<< endl;
+
                 break;
             case 3:
                 speed++;
-                cout<<"indicador"<< endl;
                 break;
         }
 

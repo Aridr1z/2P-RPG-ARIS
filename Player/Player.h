@@ -35,6 +35,7 @@ public:
     Action takeAction(vector<Enemy*> enemies);
 
     void levelUp();
+    void levelUp(std::vector<Enemy*> enemies);
     std::vector<Enemy*> enemies;
 
     void gainExperience(int exp);
